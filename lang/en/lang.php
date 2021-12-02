@@ -2,7 +2,7 @@
 
 return [
     'plugin' => [
-        'name' => 'JWTAuth',
+        'name' => 'PLUS JWTAuth',
         'description' => 'JSON Web Token Authentication.',
     ],
     'permissions' => [
@@ -77,15 +77,15 @@ return [
                 'content' => "
                     <p>There is two ways to configure these URLs, and It'll depend of your application structure.</p>
 
-                    <p><strong>Same domain</strong>: In this case you just need to inform the URI, 
-                    and the system will considering that the base url is the same that your 
+                    <p><strong>Same domain</strong>: In this case you just need to inform the URI,
+                    and the system will considering that the base url is the same that your
                     Winter CMS installation.<p>
 
-                    <p><strong>External domain</strong>: If your Winter CMS and your front-end application 
+                    <p><strong>External domain</strong>: If your Winter CMS and your front-end application
                     are hosted in different domain you need to specify the full URL.</p>
 
-                    <p>Also is important to remember that the both URLs must have the parameter 
-                    <i>{code}</i> that will be replaced for the <i>activation code</i> or 
+                    <p>Also is important to remember that the both URLs must have the parameter
+                    <i>{code}</i> that will be replaced for the <i>activation code</i> or
                     the <i>reset code</i> automatically.</p>
                 "
             ],
