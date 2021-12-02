@@ -60,3 +60,5 @@
     - Updates dependencies
     - Fix language support
     - Adds French language support
+1.4.5:
+    - Change namespace & support OC 2.x
