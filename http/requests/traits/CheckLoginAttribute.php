@@ -2,7 +2,7 @@
 
 namespace RLuders\JWTAuth\Http\Requests\Traits;
 
-use Winter\User\Models\Settings as WinterUserSettings;
+use RainLab\User\Models\Settings as WinterUserSettings;
 
 trait CheckLoginAttribute
 {

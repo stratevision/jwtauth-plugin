@@ -2,7 +2,7 @@
 
 namespace RLuders\JWTAuth\Classes;
 
-use Winter\User\Classes\AuthManager as RainAuthManager;
+use RainLab\User\Classes\AuthManager as RainAuthManager;
 
 /**
  * {@inheritDoc}

@@ -4,7 +4,7 @@ namespace RLuders\JWTAuth\Exceptions;
 
 use Illuminate\Http\Response;
 use InvalidArgumentException;
-use Winter\Storm\Exception\ValidationException;
+use October\Rain\Exception\ValidationException;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 
 class JsonValidationException extends ValidationException implements HttpExceptionInterface

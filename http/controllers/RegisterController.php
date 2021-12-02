@@ -11,7 +11,7 @@ use RLuders\JWTAuth\Classes\JWTAuth;
 use RLuders\JWTAuth\Models\Settings;
 use RLuders\JWTAuth\Http\Requests\RegisterRequest;
 use RLuders\JWTAuth\Http\Controllers\Traits\CanMakeUrl;
-use Winter\User\Models\Settings as WinterUserSettings;
+use RainLab\User\Models\Settings as WinterUserSettings;
 use RLuders\JWTAuth\Http\Controllers\Traits\CanSendMail;
 
 class RegisterController extends Controller
@@ -40,12 +40,12 @@ class RegisterController extends Controller
 
         $data = $request->all();
 
-        Event::fire('Winter.User.beforeRegister', [&$data]);
+        Event::fire('RainLab.User.beforeRegister', [&$data]);
 
         $activationMode = $this->getActivationMode();
         $user = $auth->register($data, ($activationMode == 'auto'));
 
-        Event::fire('Winter.User.register', [$user, $data]);
+        Event::fire('RainLab.User.register', [$user, $data]);
 
         if ($activationMode == 'email') {
             $this->sendActivationEmail($user);
@@ -102,7 +102,7 @@ class RegisterController extends Controller
         $this->sendMail(
             $user->email,
             $user->name,
-            'Winter.User::mail.activate',
+            'RainLab.User::mail.activate',
             $data
         );
     }

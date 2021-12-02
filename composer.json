@@ -1,6 +1,6 @@
 {
-    "name": "rluders/wn-jwtauth-plugin",
-    "type": "winter-plugin",
+    "name": "rluders/oc-jwtauth-plugin",
+    "type": "october-plugin",
     "description": "JSON Web Token Authentication plugin for Winter CMS",
     "keywords": [
         "winter",
@@ -30,7 +30,6 @@
     "require": {
         "php": ">=7.0",
         "composer/installers": "~1.0",
-        "winter/wn-user-plugin": "^2.0",
         "tymon/jwt-auth": "~0.5|^1.0"
     },
     "minimum-stability": "dev",

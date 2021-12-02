@@ -19,11 +19,11 @@
 
 # Introduction
 
-This plugin provides a JSON Web Tokens authentication mechanism for [Winter CMS](http://www.wintercms.com) integrated with Winter.User. It's essential for your web application built with Angular, Vue.js, React or other modern Javascript frameworks.
+This plugin provides a JSON Web Tokens authentication mechanism for [Winter CMS](http://www.wintercms.com) integrated with RainLab.User. It's essential for your web application built with Angular, Vue.js, React or other modern Javascript frameworks.
 
 ## Requirements
 
-- [Winter.User](https://github.com/Winter/User-plugin) plugin
+- [RainLab.User](https://github.com/Winter/User-plugin) plugin
 - [RLuders.CORS](https://wintercms.com/plugin/rluders-cors) plugin (optional, but recommended)
 
 ## Theme
@@ -63,7 +63,7 @@ Here's the list of available endpoints for this plugin.
 | login    | string | Yes      | Account login attribute |
 | password | string | Yes      | Account password        |
 
-> The field `login` value can be the account `email` or `username`. You can select it on `Winter.User` configuration what field should be used for login.
+> The field `login` value can be the account `email` or `username`. You can select it on `RainLab.User` configuration what field should be used for login.
 
 ### Responses
 
@@ -109,7 +109,7 @@ Here's the list of available endpoints for this plugin.
 | password              | string | Yes      | Account password         |
 | password_confirmation | string | No       | Confirm the new password |
 
-> The field `username` can be **required**. It depends of your `Winter.User` configuration.
+> The field `username` can be **required**. It depends of your `RainLab.User` configuration.
 
 ### Responses
 
@@ -133,8 +133,8 @@ Here's the list of available endpoints for this plugin.
 
 ### Supported events
 
-- `Winter.User.beforeRegister`
-- `Winter.User.register`
+- `RainLab.User.beforeRegister`
+- `RainLab.User.register`
 
 ## Account Activation
 

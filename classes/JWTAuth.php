@@ -11,7 +11,7 @@ class JWTAuth extends BaseJWTAuth
      *
      * @param array $data
      * @param boolean $activate
-     * @return Winter\Storm\Database\Model
+     * @return October\Rain\Database\Model
      */
     public function register(array $data, $activate = false)
     {
@@ -22,7 +22,7 @@ class JWTAuth extends BaseJWTAuth
      * Find the user by ID
      *
      * @param int $userId
-     * @return Winter\Storm\Database\Model
+     * @return October\Rain\Database\Model
      */
     public function findUserById($userId)
     {

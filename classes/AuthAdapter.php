@@ -2,7 +2,7 @@
 
 namespace RLuders\JWTAuth\Classes;
 
-use Winter\Storm\Auth\AuthException;
+use October\Rain\Auth\AuthException;
 use RLuders\JWTAuth\Classes\AuthManager;
 use Tymon\JWTAuth\Contracts\Providers\Auth as AuthInterface;
 
@@ -74,7 +74,7 @@ class AuthAdapter implements AuthInterface
      *
      * @param array $data
      * @param boolean $activate
-     * @return Winter\Storm\Database\Model
+     * @return October\Rain\Database\Model
      */
     public function register($data, $activate = false)
     {
