@@ -1,9 +1,9 @@
 <?php
 
-namespace RLuders\JWTAuth\Classes;
+namespace Sv\JWTAuth\Classes;
 
 use October\Rain\Auth\AuthException;
-use RLuders\JWTAuth\Classes\AuthManager;
+use Sv\JWTAuth\Classes\AuthManager;
 use Tymon\JWTAuth\Contracts\Providers\Auth as AuthInterface;
 
 /**
@@ -12,7 +12,7 @@ use Tymon\JWTAuth\Contracts\Providers\Auth as AuthInterface;
 class AuthAdapter implements AuthInterface
 {
     /**
-     * @var RLuders\JWTAuth\Classes\AuthManager
+     * @var Sv\JWTAuth\Classes\AuthManager
      */
     protected $auth;
 
@@ -29,7 +29,7 @@ class AuthAdapter implements AuthInterface
      *
      * @param array $credentials User credentials (username/email and password)
      *
-     * @return bool|RLuders\JWTAuth\Models\User
+     * @return bool|Sv\JWTAuth\Models\User
      */
     public function byCredentials(array $credentials = [])
     {
@@ -62,7 +62,7 @@ class AuthAdapter implements AuthInterface
     /**
      * Get the currently authenticated user.
      *
-     * @return RLuders\JWTAuth\Models\User
+     * @return Sv\JWTAuth\Models\User
      */
     public function user()
     {

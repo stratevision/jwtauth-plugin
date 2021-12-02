@@ -1,12 +1,12 @@
 <?php
 
-namespace RLuders\JWTAuth;
+namespace Sv\JWTAuth;
 
 use App, Config;
 use Illuminate\Foundation\AliasLoader;
 use System\Classes\PluginBase;
 use System\Classes\SettingsManager;
-use RLuders\JWTAuth\Models\Settings as PluginSettings;
+use Sv\JWTAuth\Models\Settings as PluginSettings;
 
 /**
  * JWTAuth Plugin Information File.
@@ -28,8 +28,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'rluders.jwtauth::lang.plugin.name',
-            'description' => 'rluders.jwtauth::lang.plugin.description',
+            'name'        => 'sv.jwtauth::lang.plugin.name',
+            'description' => 'sv.jwtauth::lang.plugin.description',
             'author'      => 'Ricardo Lüders',
             'icon'        => 'icon-user-secret',
         ];
@@ -44,13 +44,13 @@ class Plugin extends PluginBase
     {
         return [
             'settings' => [
-                'label'       => 'rluders.jwtauth::lang.settings.menu_label',
-                'description' => 'rluders.jwtauth::lang.settings.menu_description',
+                'label'       => 'sv.jwtauth::lang.settings.menu_label',
+                'description' => 'sv.jwtauth::lang.settings.menu_description',
                 'category'    => SettingsManager::CATEGORY_USERS,
                 'icon'        => 'icon-user-secret',
-                'class'       => 'RLuders\JWTAuth\Models\Settings',
+                'class'       => 'Sv\JWTAuth\Models\Settings',
                 'order'       => 600,
-                'permissions' => ['rluders.jwtauth.access_settings'],
+                'permissions' => ['sv.jwtauth.access_settings'],
             ]
         ];
     }
@@ -63,9 +63,9 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'rluders.jwtauth.access_settings' => [
-                'tab' => 'rluders.jwtauth::lang.plugin.name',
-                'label' => 'rluders.jwtauth::lang.permissions.settings'
+            'sv.jwtauth.access_settings' => [
+                'tab' => 'sv.jwtauth::lang.plugin.name',
+                'label' => 'sv.jwtauth::lang.permissions.settings'
             ]
         ];
     }
@@ -77,9 +77,9 @@ class Plugin extends PluginBase
      */
     public function register()
     {
-        App::register('\RLuders\JWTAuth\Providers\AuthServiceProvider');
+        App::register('\Sv\JWTAuth\Providers\AuthServiceProvider');
         $alias = AliasLoader::getInstance();
-        $alias->alias('JWTAuth', '\RLuders\JWTAuth\Facades\JWTAuth');
+        $alias->alias('JWTAuth', '\Sv\JWTAuth\Facades\JWTAuth');
 
         // Handle error
         $this->app->error(function (\Exception $e) {

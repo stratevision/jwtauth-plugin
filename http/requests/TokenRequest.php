@@ -1,8 +1,8 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Requests;
+namespace Sv\JWTAuth\Http\Requests;
 
-use RLuders\JWTAuth\Http\Requests\Request;
+use Sv\JWTAuth\Http\Requests\Request;
 
 class TokenRequest extends Request
 {

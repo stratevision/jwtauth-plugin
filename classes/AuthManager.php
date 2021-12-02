@@ -1,6 +1,6 @@
 <?php
 
-namespace RLuders\JWTAuth\Classes;
+namespace Sv\JWTAuth\Classes;
 
 use RainLab\User\Classes\AuthManager as RainAuthManager;
 
@@ -12,5 +12,5 @@ class AuthManager extends RainAuthManager
     /**
      * {@inheritDoc}
      */
-    protected $userModel = \RLuders\JWTAuth\Models\User::class;
+    protected $userModel = \Sv\JWTAuth\Models\User::class;
 }

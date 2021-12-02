@@ -1,6 +1,6 @@
 <?php
 
-namespace RLuders\JWTAuth\Facades;
+namespace Sv\JWTAuth\Facades;
 
 use October\Rain\Support\Facade;
 

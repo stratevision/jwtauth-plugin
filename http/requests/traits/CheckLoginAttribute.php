@@ -1,6 +1,6 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Requests\Traits;
+namespace Sv\JWTAuth\Http\Requests\Traits;
 
 use RainLab\User\Models\Settings as WinterUserSettings;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Sv\JWTAuth\Http\Controllers;
 
 use Illuminate\Http\Response;
-use RLuders\JWTAuth\Models\User;
+use Sv\JWTAuth\Models\User;
 use Illuminate\Routing\Controller;
-use RLuders\JWTAuth\Http\Requests\ResetPasswordRequest;
+use Sv\JWTAuth\Http\Requests\ResetPasswordRequest;
 
 class ResetPasswordController extends Controller
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace RLuders\JWTAuth\Classes;
+namespace Sv\JWTAuth\Classes;
 
 use Tymon\JWTAuth\JWTAuth as BaseJWTAuth;
 

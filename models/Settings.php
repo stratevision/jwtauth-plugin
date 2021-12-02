@@ -1,6 +1,6 @@
 <?php
 
-namespace RLuders\JWTAuth\Models;
+namespace Sv\JWTAuth\Models;
 
 use Model;
 

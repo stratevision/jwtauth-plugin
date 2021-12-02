@@ -3,17 +3,17 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/rluders/oc-jwtauth-plugin">
-    <img src="https://travis-ci.org/rluders/oc-jwtauth-plugin.svg?branch=main">
+  <a href="https://travis-ci.org/sv/oc-jwtauth-plugin">
+    <img src="https://travis-ci.org/sv/oc-jwtauth-plugin.svg?branch=main">
   </a>
-  <a href="https://wintercms.com/plugin/rluders-jwtauth">
+  <a href="https://wintercms.com/plugin/sv-jwtauth">
     <img src="https://img.shields.io/badge/Winter CMS-Plugin-%23EE7203.svg">
   </a>
-  <a href="https://www.patreon.com/rluders">
+  <a href="https://www.patreon.com/sv">
     <img src="https://img.shields.io/badge/Support_on-Patreon-green.svg">
   </a>
   <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-    <img src="https://img.shields.io/github/license/rluders/oc-jwtauth-plugin.svg">
+    <img src="https://img.shields.io/github/license/sv/oc-jwtauth-plugin.svg">
   </a>
 </p>
 
@@ -24,11 +24,11 @@ This plugin provides a JSON Web Tokens authentication mechanism for [Winter CMS]
 ## Requirements
 
 - [RainLab.User](https://github.com/Winter/User-plugin) plugin
-- [RLuders.CORS](https://wintercms.com/plugin/rluders-cors) plugin (optional, but recommended)
+- [Sv.CORS](https://wintercms.com/plugin/sv-cors) plugin (optional, but recommended)
 
 ## Theme
 
-- [Angular Skeleton](https://wintercms.com/theme/rluders-angular2)
+- [Angular Skeleton](https://wintercms.com/theme/sv-angular2)
 
 ## Tutorials
 
@@ -36,7 +36,7 @@ This plugin provides a JSON Web Tokens authentication mechanism for [Winter CMS]
 
 # Installation
 
-Yes, you can install it from the repository (but I'll not provide a documentation for that - in this case I'll assume that you know what you are doing). I strongly recommend that you install it from [product page](https://wintercms.com/plugin/rluders-jwtauth) inside the Winter CMS Marketplace.
+Yes, you can install it from the repository (but I'll not provide a documentation for that - in this case I'll assume that you know what you are doing). I strongly recommend that you install it from [product page](https://wintercms.com/plugin/sv-jwtauth) inside the Winter CMS Marketplace.
 
 # Configuration
 
