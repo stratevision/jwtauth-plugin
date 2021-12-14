@@ -8,6 +8,9 @@ use Sv\JWTAuth\Classes\JWTAuth;
 use Sv\JWTAuth\Http\Requests\TokenRequest;
 use Tymon\JWTAuth\Exceptions\TokenBlacklistedException;
 
+/**
+ * @group JWTAuth
+ */
 class RefreshTokenController extends Controller
 {
     /**

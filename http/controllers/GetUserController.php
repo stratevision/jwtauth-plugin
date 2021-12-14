@@ -6,10 +6,14 @@ use Illuminate\Http\Response;
 use Sv\JWTAuth\Classes\JWTAuth;
 use Illuminate\Routing\Controller;
 
+/**
+ * @group JWTAuth
+ * @authenticated
+ */
 class GetUserController extends Controller
 {
     /**
-     * Send the forgot password request
+     * Get User Profile
      *
      * @return Illuminate\Http\Response
      */

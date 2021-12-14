@@ -7,6 +7,9 @@ use Sv\JWTAuth\Models\User;
 use Illuminate\Routing\Controller;
 use Sv\JWTAuth\Http\Requests\ResetPasswordRequest;
 
+/**
+ * @group JWTAuth
+ */
 class ResetPasswordController extends Controller
 {
     /**

@@ -7,6 +7,9 @@ use Illuminate\Routing\Controller;
 use Sv\JWTAuth\Classes\JWTAuth;
 use Sv\JWTAuth\Http\Requests\ActivationRequest;
 
+/**
+ * @group JWTAuth
+ */
 class ActivateController extends Controller
 {
     /**

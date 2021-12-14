@@ -9,6 +9,9 @@ use Sv\JWTAuth\Classes\JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Sv\JWTAuth\Http\Requests\LoginRequest;
 
+/**
+ * @group JWTAuth
+ */
 class LoginController extends Controller
 {
     /**

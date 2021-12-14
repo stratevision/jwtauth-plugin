@@ -14,6 +14,9 @@ use Sv\JWTAuth\Http\Controllers\Traits\CanMakeUrl;
 use RainLab\User\Models\Settings as WinterUserSettings;
 use Sv\JWTAuth\Http\Controllers\Traits\CanSendMail;
 
+/**
+ * @group JWTAuth
+ */
 class RegisterController extends Controller
 {
     use CanMakeUrl,

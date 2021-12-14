@@ -11,6 +11,9 @@ use Sv\JWTAuth\Http\Requests\ForgotPasswordRequest;
 use Sv\JWTAuth\Http\Controllers\Traits\CanMakeUrl;
 use Sv\JWTAuth\Http\Controllers\Traits\CanSendMail;
 
+/**
+ * @group JWTAuth
+ */
 class ForgotPasswordController extends Controller
 {
     use CanMakeUrl,
