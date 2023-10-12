@@ -1,18 +1,18 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Sv\JWTAuth\Http\Controllers;
 
 use Mail;
 use Event;
 use Illuminate\Http\Response;
-use RLuders\JWTAuth\Models\User;
+use Sv\JWTAuth\Models\User;
 use Illuminate\Routing\Controller;
-use RLuders\JWTAuth\Classes\JWTAuth;
-use RLuders\JWTAuth\Models\Settings;
-use RLuders\JWTAuth\Http\Requests\RegisterRequest;
-use RLuders\JWTAuth\Http\Controllers\Traits\CanMakeUrl;
-use Winter\User\Models\Settings as WinterUserSettings;
-use RLuders\JWTAuth\Http\Controllers\Traits\CanSendMail;
+use Sv\JWTAuth\Classes\JWTAuth;
+use Sv\JWTAuth\Models\Settings;
+use Sv\JWTAuth\Http\Requests\RegisterRequest;
+use Sv\JWTAuth\Http\Controllers\Traits\CanMakeUrl;
+use RainLab\User\Models\Settings as WinterUserSettings;
+use Sv\JWTAuth\Http\Controllers\Traits\CanSendMail;
 
 class RegisterController extends Controller
 {
@@ -40,12 +40,12 @@ class RegisterController extends Controller
 
         $data = $request->all();
 
-        Event::fire('Winter.User.beforeRegister', [&$data]);
+        Event::fire('RainLab.User.beforeRegister', [&$data]);
 
         $activationMode = $this->getActivationMode();
         $user = $auth->register($data, ($activationMode == 'auto'));
 
-        Event::fire('Winter.User.register', [$user, $data]);
+        Event::fire('RainLab.User.register', [$user, $data]);
 
         if ($activationMode == 'email') {
             $this->sendActivationEmail($user);
@@ -102,7 +102,7 @@ class RegisterController extends Controller
         $this->sendMail(
             $user->email,
             $user->name,
-            'winter.user::mail.activate',
+            'RainLab.User::mail.activate',
             $data
         );
     }

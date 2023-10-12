@@ -1,11 +1,11 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Sv\JWTAuth\Http\Controllers;
 
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-use RLuders\JWTAuth\Classes\JWTAuth;
-use RLuders\JWTAuth\Http\Requests\TokenRequest;
+use Sv\JWTAuth\Classes\JWTAuth;
+use Sv\JWTAuth\Http\Requests\TokenRequest;
 use PHPOpenSourceSaver\JWTAuth\Exceptions\TokenBlacklistedException;
 
 class RefreshTokenController extends Controller

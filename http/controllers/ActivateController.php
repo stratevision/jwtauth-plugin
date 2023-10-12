@@ -1,12 +1,15 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Sv\JWTAuth\Http\Controllers;
 
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-use RLuders\JWTAuth\Classes\JWTAuth;
-use RLuders\JWTAuth\Http\Requests\ActivationRequest;
+use Sv\JWTAuth\Classes\JWTAuth;
+use Sv\JWTAuth\Http\Requests\ActivationRequest;
 
+/**
+ * @group JWTAuth
+ */
 class ActivateController extends Controller
 {
     /**

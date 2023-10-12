@@ -1,15 +1,15 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Sv\JWTAuth\Http\Controllers;
 
 use Mail;
 use Illuminate\Http\Response;
-use RLuders\JWTAuth\Models\User;
-use RLuders\JWTAuth\Models\Settings;
+use Sv\JWTAuth\Models\User;
+use Sv\JWTAuth\Models\Settings;
 use Illuminate\Routing\Controller;
-use RLuders\JWTAuth\Http\Requests\ForgotPasswordRequest;
-use RLuders\JWTAuth\Http\Controllers\Traits\CanMakeUrl;
-use RLuders\JWTAuth\Http\Controllers\Traits\CanSendMail;
+use Sv\JWTAuth\Http\Requests\ForgotPasswordRequest;
+use Sv\JWTAuth\Http\Controllers\Traits\CanMakeUrl;
+use Sv\JWTAuth\Http\Controllers\Traits\CanSendMail;
 
 class ForgotPasswordController extends Controller
 {
@@ -61,7 +61,7 @@ class ForgotPasswordController extends Controller
         $this->sendMail(
             $user->email,
             $user->name,
-            'winter.user::mail.restore',
+            'RainLab.User::mail.restore',
             $data
         );
     }

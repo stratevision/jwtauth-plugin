@@ -1,9 +1,9 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Requests;
+namespace Sv\JWTAuth\Http\Requests;
 
-use RLuders\JWTAuth\Http\Requests\Request;
-use RLuders\JWTAuth\Http\Requests\Traits\CheckLoginAttribute;
+use Sv\JWTAuth\Http\Requests\Request;
+use Sv\JWTAuth\Http\Requests\Traits\CheckLoginAttribute;
 
 class LoginRequest extends Request
 {

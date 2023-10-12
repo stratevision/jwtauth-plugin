@@ -1,15 +1,19 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Sv\JWTAuth\Http\Controllers;
 
 use Illuminate\Http\Response;
-use RLuders\JWTAuth\Classes\JWTAuth;
+use Sv\JWTAuth\Classes\JWTAuth;
 use Illuminate\Routing\Controller;
 
+/**
+ * @group JWTAuth
+ * @authenticated
+ */
 class GetUserController extends Controller
 {
     /**
-     * Send the forgot password request
+     * Get User Profile
      *
      * @return Illuminate\Http\Response
      */

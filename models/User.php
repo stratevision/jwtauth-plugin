@@ -1,9 +1,9 @@
 <?php
 
-namespace RLuders\JWTAuth\Models;
+namespace Sv\JWTAuth\Models;
 
 use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
-use Winter\User\Models\User as BaseUser;
+use RainLab\User\Models\User as BaseUser;
 
 class User extends BaseUser implements JWTSubject
 {

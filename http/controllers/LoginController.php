@@ -1,13 +1,13 @@
 <?php
 
-namespace RLuders\JWTAuth\Http\Controllers;
+namespace Sv\JWTAuth\Http\Controllers;
 
 use Event;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-use RLuders\JWTAuth\Classes\JWTAuth;
+use Sv\JWTAuth\Classes\JWTAuth;
 use PHPOpenSourceSaver\JWTAuth\Exceptions\JWTException;
-use RLuders\JWTAuth\Http\Requests\LoginRequest;
+use Sv\JWTAuth\Http\Requests\LoginRequest;
 
 class LoginController extends Controller
 {
@@ -25,7 +25,7 @@ class LoginController extends Controller
     ) {
         $credentials = $request->getCredentials();
 
-        Event::fire('Winter.User.beforeAuthenticate', [$this, $credentials]);
+        Event::fire('RainLab.User.beforeAuthenticate', [$this, $credentials]);
 
         try {
             if (!$token = $auth->attempt($credentials)) {
@@ -59,7 +59,7 @@ class LoginController extends Controller
             );
         }
 
-        Event::fire('Winter.User.login', $user);
+        Event::fire('RainLab.User.login', $user);
         return response()->json(compact('token', 'user'));
     }
 }
