@@ -5,7 +5,7 @@ namespace Sv\JWTAuth\Providers;
 use Config;
 use Response;
 use RainLab\User\Models\User;
-use Tymon\JWTAuth\Providers\AbstractServiceProvider;
+use PHPOpenSourceSaver\JWTAuth\Providers\AbstractServiceProvider;
 use Sv\JWTAuth\Models\Settings as PluginSettings;
 use Sv\JWTAuth\Exceptions\JsonValidationException;
 

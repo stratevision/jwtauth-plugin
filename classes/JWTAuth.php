@@ -2,7 +2,7 @@
 
 namespace Sv\JWTAuth\Classes;
 
-use Tymon\JWTAuth\JWTAuth as BaseJWTAuth;
+use PHPOpenSourceSaver\JWTAuth\JWTAuth as BaseJWTAuth;
 
 class JWTAuth extends BaseJWTAuth
 {

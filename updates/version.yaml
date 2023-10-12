@@ -30,7 +30,7 @@
     - !!! Refresh token changes from PATCH to POST and now requires an data form parameter. Please, check the documentation or the UPDATED Postman collection.
 1.2.5:
     - Fix the validations issues
-    - Fix issues when using Sv.Cors Plugin
+    - Fix issues when using RLuders.Cors Plugin
 1.3.0:
     - The AuthController was removed and splited into Single Action Controllers
     - Added some Traits to keep the code simple
@@ -60,5 +60,6 @@
     - Updates dependencies
     - Fix language support
     - Adds French language support
-1.4.5:
-    - Change namespace & support OC 2.x
+1.5.0:
+    - Updates dependencies - replaced tymon/jwt-auth with php-open-source-saver/jwt-auth
+    - Adds jwt-auth related refactoring

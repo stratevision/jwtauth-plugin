@@ -4,7 +4,7 @@ namespace Sv\JWTAuth\Classes;
 
 use October\Rain\Auth\AuthException;
 use Sv\JWTAuth\Classes\AuthManager;
-use Tymon\JWTAuth\Contracts\Providers\Auth as AuthInterface;
+use PHPOpenSourceSaver\JWTAuth\Contracts\Providers\Auth as AuthInterface;
 
 /**
  * {@inheritDoc}

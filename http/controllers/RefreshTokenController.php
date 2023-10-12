@@ -6,11 +6,8 @@ use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Sv\JWTAuth\Classes\JWTAuth;
 use Sv\JWTAuth\Http\Requests\TokenRequest;
-use Tymon\JWTAuth\Exceptions\TokenBlacklistedException;
+use PHPOpenSourceSaver\JWTAuth\Exceptions\TokenBlacklistedException;
 
-/**
- * @group JWTAuth
- */
 class RefreshTokenController extends Controller
 {
     /**

@@ -1,5 +1,5 @@
 {
-    "name": "sv/jwtauth-plugin",
+    "name": "sv/oc-jwtauth-plugin",
     "type": "october-plugin",
     "description": "JSON Web Token Authentication plugin for Winter CMS",
     "keywords": [
@@ -30,8 +30,14 @@
     "require": {
         "php": ">=7.0",
         "composer/installers": "~1.0",
-        "tymon/jwt-auth": "~0.5|^1.0"
+        "rainlab/user-plugin": "^2.0",
+        "php-open-source-saver/jwt-auth": "^2.1"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
 }
