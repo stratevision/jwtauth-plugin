@@ -87,13 +87,13 @@ class Plugin extends PluginBase
                 return;
             }
 
-            return [
+            return response()->json([
                 'error' => [
                     'code' => 'internal_error',
                     'http_code' => 500,
                     'message' => $e->getMessage(),
                 ],
-            ];
+            ]);
         });
     }
 }
