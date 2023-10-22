@@ -43,6 +43,13 @@ class AuthServiceProvider extends AbstractServiceProvider
         );
 
         $this->app->bind(
+            \Sv\JWTAuth\Http\Requests\LineLoginRequest::class,
+            function ($app) {
+                return new \Sv\JWTAuth\Http\Requests\LineLoginRequest(input());
+            }
+        );
+
+        $this->app->bind(
             \Sv\JWTAuth\Http\Requests\LoginRequest::class,
             function ($app) {
                 return new \Sv\JWTAuth\Http\Requests\LoginRequest(input());

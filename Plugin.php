@@ -93,7 +93,7 @@ class Plugin extends PluginBase
                     'http_code' => 500,
                     'message' => $e->getMessage(),
                 ],
-            ]);
+            ], 500);
         });
     }
 }

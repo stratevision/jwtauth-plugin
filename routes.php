@@ -8,6 +8,11 @@ Route::group(
     ],
     function () {
         Route::post(
+            'line-login',
+            'LineLoginController'
+        )->name('api.auth.line-login');
+
+        Route::post(
             'login',
             'LoginController'
         )->name('api.auth.login');
