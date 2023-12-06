@@ -28,6 +28,8 @@ class GetUserController extends Controller
 
         // https://docs.octobercms.com/2.x/database/relations.html#lazy-eager-loading
         $user->load('groups');
+        $user->load('sites');
+        $user->load('clusters');
 
         return response()->json(compact('user'));
     }
