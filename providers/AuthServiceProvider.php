@@ -84,6 +84,13 @@ class AuthServiceProvider extends AbstractServiceProvider
             }
         );
 
+        $this->app->bind(
+            \Sv\JWTAuth\Http\Requests\UpdateUserRequest::class,
+            function ($app) {
+                return new \Sv\JWTAuth\Http\Requests\UpdateUserRequest(input());
+            }
+        );
+
         // Resolving the bindings above and validating it
         $this->app->resolving(
             \Sv\JWTAuth\Http\Requests\Request::class,

@@ -2,8 +2,8 @@
 
 Route::group(
     [
-        'prefix' => 'api/auth',
-        'namespace' => 'Sv\JWTAuth\Http\Controllers',
+        'prefix'     => 'api/auth',
+        'namespace'  => 'Sv\JWTAuth\Http\Controllers',
         'middleware' => ['api'],
     ],
     function () {
@@ -47,6 +47,11 @@ Route::group(
                 Route::get(
                     'me',
                     'GetUserController'
+                )->name('api.auth.me');
+
+                Route::post(
+                    'me',
+                    'UpdateUserController'
                 )->name('api.auth.me');
             }
         );
