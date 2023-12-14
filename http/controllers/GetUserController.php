@@ -26,6 +26,9 @@ class GetUserController extends Controller
             );
         }
 
+        // 修正前台會員沒有 last_seen 的問題
+        $user->touchLastSeen();
+
         // https://docs.octobercms.com/2.x/database/relations.html#lazy-eager-loading
         $user->load('groups');
         $user->load('sites');
